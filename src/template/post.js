@@ -10,9 +10,6 @@ import markdown from 'remark-parse';
 import unified from 'unified';
 import styled from "styled-components";
 
-import iconQuote from "/Users/guari/Documents/Github/omega-test-1/src/assets/image/png/quote-icon.png";
-import imgB1 from "/Users/guari/Documents/Github/omega-test-1/src/assets/image/jpeg/blog-details-img-1.jpg";
-
 var html = require('rehype-stringify')
 var remark2rehype = require('remark-rehype')
 
@@ -31,7 +28,6 @@ const Post = styled(Box)`
   h5,
   h6,
   p,
-  blockquote,
   pre,
   ul,
   ol {
@@ -56,25 +52,6 @@ const Post = styled(Box)`
 
   ul li {
     list-style-type: disc;
-  }
-
-  blockquote {
-    margin-bottom: 1.25rem;
-    padding-left: 50px;
-    position: relative;
-    color: ${({ theme }) => theme.colors.text} !important;
-    font-size: 20px;
-    &::after {
-      content: url(${iconQuote});
-      display: inline-block;
-      min-width: 28px;
-      max-width: 28px;
-      margin-top: 8px;
-      margin-right: 23px;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
   }
   img,
   iframe,
