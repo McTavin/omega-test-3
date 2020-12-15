@@ -104,7 +104,7 @@ const BlogDetails = ({data}) => {
         <Section className="pb-0">
           <Container>
             <Row>
-              <Col lg="8" className="mb-5">
+              <Col lg="14" className="mb-5">
                 
                 {/* <!-- Blog section --> */}
     <Post>
