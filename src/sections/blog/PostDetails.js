@@ -1,21 +1,11 @@
 import React from "react";
-import markdown from 'remark-parse';
-import unified from 'unified';
-import styled from "styled-components";
-import { StaticQuery, graphql } from "gatsby"
 
 import { Box, Badge } from "../../components/Core";
+import styled from "styled-components";
 
 import imgB1 from "../../assets/image/jpeg/blog-details-img-1.jpg";
 import iconQuote from "../../assets/image/png/quote-icon.png";
 
-var html = require('rehype-stringify')
-var remark2rehype = require('remark-rehype')
-
-var processor = unified()
-  .use(markdown)
-  .use(remark2rehype)
-  .use(html)
 
 const Post = styled(Box)`
   overflow: hidden;

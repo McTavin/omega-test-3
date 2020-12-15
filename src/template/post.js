@@ -111,7 +111,7 @@ const BlogDetails = ({data}) => {
       <div>
         <img src={data.airtable.data.image[0].url} alt={data.airtable.data.title} />
       </div>
-      <div className="blog-post-content"
+      <div className="mb-5"
           dangerouslySetInnerHTML={{ 
             __html: processor().processSync(data.airtable.data.PostMarkdown) }}
         >
