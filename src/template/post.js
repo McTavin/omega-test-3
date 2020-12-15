@@ -118,11 +118,9 @@ const BlogDetails = ({data}) => {
       </div>
     </Post>
     <Box className="d-flex" mt={4}>
-      <BadgePost>Freelance</BadgePost>
       <BadgePost>Design</BadgePost>
-      <BadgePost>Earning</BadgePost>
       <BadgePost>Marketing</BadgePost>
-      <BadgePost>Work</BadgePost>
+      <BadgePost>Tech</BadgePost>
     </Box>
               </Col>
               
