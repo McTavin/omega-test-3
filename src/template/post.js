@@ -104,14 +104,14 @@ const BlogDetails = ({data}) => {
         <Section className="pb-0">
           <Container>
             <Row>
-              <div lg="8" className="mb-5">
+              <Col lg="8" className="mb-5">
                 
                 {/* <!-- Blog section --> */}
     <Post>
       <div>
         <img src={data.airtable.data.image[0].url} alt={data.airtable.data.title} />
       </div>
-      <div className="mb-5"
+      <div
           dangerouslySetInnerHTML={{ 
             __html: processor().processSync(data.airtable.data.PostMarkdown) }}
         >
@@ -124,7 +124,7 @@ const BlogDetails = ({data}) => {
       <BadgePost>Marketing</BadgePost>
       <BadgePost>Work</BadgePost>
     </Box>
-              </div>
+              </Col>
               
             </Row>
           </Container>
