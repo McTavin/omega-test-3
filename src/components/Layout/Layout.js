@@ -123,7 +123,7 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>Omega</title>
+          <title>Spark Digital</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
@@ -149,7 +149,7 @@ const Layout = ({ children, pageContext }) => {
       >
         <GlobalStyle />
         <Helmet>
-          <title>Omega</title>
+          <title>Spark Digital</title>
           <link rel="icon" type="image/png" href={imgFavicon} />
         </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"}>
@@ -158,10 +158,9 @@ const Layout = ({ children, pageContext }) => {
           </div>
         </Loader>
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
-          <Header isDark={gContext.headerDark} />
+          
           {children}
 
-          <Footer isDark={gContext.footerDark} />
         </div>
 
         <ModalVideo />

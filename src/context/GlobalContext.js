@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const GlobalContext = React.createContext();
 
 const GlobalProvider = ({ children }) => {
-  const [themeDark, setThemeDark] = useState(false);
+  const [themeDark, setThemeDark] = useState(true);
   const [videoModalVisible, setVideoModalVisible] = useState(false);
   const [visibleOffCanvas, setVisibleOffCanvas] = useState(false);
   const [headerDark, setHeaderDark] = useState(false);
