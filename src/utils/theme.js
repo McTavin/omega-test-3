@@ -4,6 +4,7 @@ import { breakpoints } from "./breakpoints";
 const defaultColors = {
   primary: "#0e567c",
   secondary: "#ffffff",
+  clickable: "#0A84FFFF",
   white: "#ffffff",
   dark: "#19191b",
   black: "#000000",
@@ -16,6 +17,7 @@ const defaultColors = {
 const colors = {
   primary: defaultColors.primary,
   secondary: defaultColors.secondary,
+  clickable: defaultColors.clickable,
   light: defaultColors.white,
   lightShade: rgba(defaultColors.white, 0.75),
   dark: defaultColors.dark,
@@ -34,6 +36,7 @@ const colors = {
     dark: {
       primary: defaultColors.primary,
       secondary: defaultColors.secondary,
+      clickable: defaultColors.clickable,
       light: defaultColors.white,
       lightShade: rgba(defaultColors.white, 0.75),
       dark: defaultColors.dark,

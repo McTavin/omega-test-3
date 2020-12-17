@@ -24,11 +24,10 @@ const globalStyle = createGlobalStyle`
 
 
   a {
-    color: ${({ theme }) => theme.colors.text} !important;
+    color: ${({ theme }) => theme.colors.clickable} !important;
     transition: all 0.3s ease-out;
     &:hover, &:active, &:focus{
       color: ${({ theme }) => theme.colors.secondary} !important;
-      text-decoration: none!important;
       outline: none !important;
     }
   }

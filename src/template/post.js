@@ -66,7 +66,7 @@ const BadgePost = ({ children }) => (
   <Badge
     mr={3}
     mb={3}
-    bg="#007AFF"
+    bg="#2C2C2EFF"
     color="#696871"
     fontSize="16px"
     px={3}
@@ -88,7 +88,7 @@ const BlogDetails = ({data}) => {
                 <Title variant="hero">{data.airtable.data.title}</Title>
                 <Box className="justify-content-center text-right">
                   <Text>
-                    <a href="https://sdigital.link/sparkapps1">{data.airtable.data.author}</a>
+                    <a href={data.airtable.data.URL}>{data.airtable.data.author}</a>
                   </Text>
                 </Box>
               </Col>
@@ -112,7 +112,7 @@ const BlogDetails = ({data}) => {
       </div>
     </Post>
     <Box className="d-flex" mt={4}>
-      <BadgePost><a href="https://sdigital.link/sparkapps1">Automatiza tu empresa</a></BadgePost>
+      <BadgePost><a href={data.airtable.data.URL}>{data.airtable.data.CTA}</a></BadgePost>
     </Box>
               </Col>
               
@@ -135,6 +135,8 @@ query GetRecord($slug: String!){
             title
             PostMarkdown
             author
+            URL
+            CTA
             image {
                 url
             }
