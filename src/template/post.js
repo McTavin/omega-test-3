@@ -66,7 +66,7 @@ const BadgePost = ({ children }) => (
   <Badge
     mr={3}
     mb={3}
-    bg="#eae9f2"
+    bg="#007AFF"
     color="#696871"
     fontSize="16px"
     px={3}
@@ -112,9 +112,7 @@ const BlogDetails = ({data}) => {
       </div>
     </Post>
     <Box className="d-flex" mt={4}>
-      <BadgePost>Design</BadgePost>
-      <BadgePost>Marketing</BadgePost>
-      <BadgePost>Tech</BadgePost>
+      <BadgePost><a href="https://sdigital.link/sparkapps1">Automatiza tu empresa</a></BadgePost>
     </Box>
               </Col>
               
