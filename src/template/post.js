@@ -86,15 +86,9 @@ const BlogDetails = ({data}) => {
             <Row className="justify-content-center text-center">
               <Col lg="12">
                 <Title variant="hero">{data.airtable.data.title}</Title>
-                <Box className="d-flex justify-content-center">
-                  <Text mr={3}>
-                    <Link to="/">Jan 14, 2020 </Link>
-                  </Text>
-                  <Text mr={3}>
-                    <Link to="/">Technology</Link>
-                  </Text>
+                <Box className="justify-content-center text-right">
                   <Text>
-                    <Link to="/">David Jones</Link>
+                    <a href="https://sdigital.link/sparkapps1">{data.airtable.data.author}</a>
                   </Text>
                 </Box>
               </Col>
@@ -142,6 +136,7 @@ query GetRecord($slug: String!){
         data {
             title
             PostMarkdown
+            author
             image {
                 url
             }
